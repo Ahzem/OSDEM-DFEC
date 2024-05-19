@@ -1,0 +1,30 @@
+nav {
+    position: fixed;
+    top: 10px;
+    left: 10%;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000;
+    transition: background 0.3s;
+    border-bottom: 1px solid #d8d8d821;
+    border-radius: 50px;
+    border-bottom: 1px solid #ffffff38;
+  }
+  
+  nav a {
+    color: #ffffffbe;
+    margin: 0 25px;
+    text-decoration: none;
+    font-family: 'chakra petch', sans-serif;
+    transition: color 0.3s, font-size 0.3s;
+    font-size: 22px;
+    font-weight: 100;
+  }
+  
+  nav a:hover {
+    color: #00a7b3;
+  }
