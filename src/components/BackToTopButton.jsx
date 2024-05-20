@@ -1,22 +1,39 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
-import { Fragment } from 'react'
-import '../css/backToTop.css'
+import { useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import '../css/BackToTopButton.css';  // Adjust the path as needed
 
-const backToTopButtonElement = document.getElementById('back-to-top');
+const BackToTopButton = () => {
+  useEffect(() => {
+    const backToTopButton = document.getElementById('back-to-top');
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        backToTopButtonElement.classList.add('show');
-    } else {
-        backToTopButtonElement.classList.remove('show');
-    }
-});
+    const handleScroll = () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    };
 
-export const backToTopButton = () => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <Fragment>
-        <button id="back-to-top"><FontAwesomeIcon icon={faArrowUp} class="fas fa-arrow-up" /></button>
-    </Fragment>
-  )
-}
+    <button id="back-to-top" onClick={scrollToTop}>
+      <FontAwesomeIcon icon={faArrowUp} />
+    </button>
+  );
+};
+
+export default BackToTopButton;

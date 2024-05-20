@@ -1,0 +1,20 @@
+.custom-cursor {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    filter: blur(1px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background 0.3s, transform 0.1s;
+    z-index: 0; /* Ensure it appears above other elements */
+  }
+  
+  .custom-cursor-hover {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  
