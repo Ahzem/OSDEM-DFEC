@@ -24,7 +24,7 @@ const CollapsibleParagraph = ({ text, maxLength }) => {
         <button
             className="learn-more"
             onClick={toggleExpansion}>
-          {isExpanded ? 'Show Less' : 'Learn More'}
+            {isExpanded ? 'Show Less' : 'Learn More'}
         </button>
       )}
     </div>

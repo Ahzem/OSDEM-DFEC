@@ -10,6 +10,7 @@ import { OurTeam } from './components/OurTeam.jsx'
 import { About } from './components/About.jsx'
 import BackToTopButton from './components/BackToTopButton.jsx'
 import CustomCursor from './components/CustomCursor.jsx'
+import { Contribute } from './components/Contribute.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Collobarate />
     <News />
     <About />
+    <Contribute />
     <OurTeam />
     <BackToTopButton />
     <CustomCursor />
