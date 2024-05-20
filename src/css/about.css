@@ -1,0 +1,24 @@
+.about-logo {
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the logo and adds some bottom margin */
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+  }
+
+  .learn-more {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+    .learn-more:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
