@@ -10,7 +10,7 @@
     width: 250px;
     text-align: center;
     overflow: hidden;
-    background: #ffffff07;
+    background: #ffffff02;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
@@ -26,7 +26,7 @@
   
   .team-info {
     padding: 20px;
-    background: #ffffff0e;
+    background: #ffffff13;
   }
   
   .team-info h3 {

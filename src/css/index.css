@@ -19,6 +19,7 @@
   --tertiary-color: #000;
   --title-color: #dfdfdf;
   --input-border-color: #00a7b36b;
+  --section-border-color: #dfdfdf2c;
 }
 
 html {
@@ -32,7 +33,7 @@ html {
   z-index: 2;
   animation: fadeInUp 1s ease-in-out;
   background: rgba(0, 0, 0, 0.055);
-  border: 1px solid #dfdfdf7c;
+  border: 1px solid var(--section-border-color);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;

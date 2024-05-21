@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    border: 1px solid #cccccca1;
+    border: 1px solid var(--section-border-color);
     border-radius: 5px;
     margin: 10px;
     backdrop-filter: blur(20px);

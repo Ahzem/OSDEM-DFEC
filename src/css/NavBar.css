@@ -10,20 +10,23 @@ nav {
     text-align: center;
     z-index: 1000;
     transition: background 0.3s;
-    border-bottom: 1px solid #d8d8d821;
     border-radius: 50px;
     border-bottom: 1px solid #ffffff38;
     animation: fadeIn 1s;
   }
   
   nav a {
-    color: #ffffffbe;
+    color: #ffffffb2;
     margin: 0 25px;
     text-decoration: none;
     font-family: 'chakra petch', sans-serif;
     transition: color 0.3s, font-size 0.3s;
     font-size: 22px;
     font-weight: 100;
+  }
+
+  nav:hover a {
+    color: #ffffff;
   }
   
   nav a:hover {
