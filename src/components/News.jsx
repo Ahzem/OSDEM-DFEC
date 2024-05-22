@@ -4,7 +4,7 @@ import '../css/News.css';
 export const News = () => {
   return (
     <Fragment>
-        <section id="latest-news" className="section">
+        <section id="latest-news" className="section" data-aos="fade-up">
             <h2 className="section-title">Latest News</h2>
                 <div className="news-grid">
                     <div className="news-item">

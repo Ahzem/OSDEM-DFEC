@@ -13,13 +13,13 @@ import { faWalking, faSchool, faBus, faTrain, faMosque, faArrowAltCircleRight } 
 export const Location = () => {
   return (
     <Fragment>
-        <div id="location" className="section2">
+        <div id="location" className="section2" data-aos="fade-up">
             <img className="map" src={map} alt="location" />
 
             <div className="place-info-icon icon-dfec">
-                <FontAwesomeIcon icon={faSchool} />
+                <FontAwesomeIcon className="animation1" icon={faSchool} />
             </div>
-                <div id="place-card" className="place-card card-dfec">
+                <div id="place-card" className="place-card card-dfec" data-aos="fade-up">
                     <div className="place-img">
                         <img src={osdem} alt="logo" />
                     </div>
@@ -39,7 +39,7 @@ export const Location = () => {
                 </div>
 
                 <div className="place-info-icon icon-minhath">
-                    <FontAwesomeIcon icon={faSchool} />
+                    <FontAwesomeIcon className="animation1" icon={faSchool} />
                 </div>
                 <div id="place-card" className="place-card card-minhath">
                     <div className="place-img">
@@ -61,7 +61,7 @@ export const Location = () => {
                     </div>
                 </div>
                 <div className="place-info-icon icon-bus">
-                    <FontAwesomeIcon icon={faBus} />
+                    <FontAwesomeIcon className="animation1" icon={faBus} />
                 </div>
                 <div id="place-card" className="place-card card-bus">
                     <div className="place-img">
@@ -82,7 +82,7 @@ export const Location = () => {
                     </div>
                 </div>
                 <div className="place-info-icon icon-wisdom">
-                    <FontAwesomeIcon icon={faSchool} />
+                    <FontAwesomeIcon className="animation1" icon={faSchool} />
                 </div>
                 <div id="place-card" className="place-card card-wisdom">
                     <div className="place-img">
@@ -103,7 +103,7 @@ export const Location = () => {
                     </div>
                 </div>
                 <div className="place-info-icon icon-train">
-                    <FontAwesomeIcon icon={faTrain} />
+                    <FontAwesomeIcon className="animation1" icon={faTrain} />
                 </div>
                 <div id="place-card" className="place-card card-train">
                     <div className="place-img">
@@ -125,7 +125,7 @@ export const Location = () => {
                 </div>
 
                 <div className="place-info-icon icon-mosque">
-                    <FontAwesomeIcon icon={faMosque} />
+                    <FontAwesomeIcon className="animation1" icon={faMosque} />
                 </div>
                 <div id="place-card" className="place-card card-mosque">
                     <div className="place-img">

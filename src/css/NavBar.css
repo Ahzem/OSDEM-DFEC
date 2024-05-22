@@ -8,11 +8,10 @@ nav {
     -webkit-backdrop-filter: blur(20px);
     padding: 10px 0;
     text-align: center;
-    z-index: 1000;
+    z-index: 10000;
     transition: background 0.3s;
     border-radius: 50px;
     border-bottom: 1px solid #ffffff38;
-    animation: fadeIn 1s;
   }
   
   nav a {

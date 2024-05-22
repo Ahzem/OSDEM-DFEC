@@ -32,7 +32,7 @@ const longText = (
 export const About = () => {
   return (
     <Fragment>
-      <section id="about" className="section">
+      <section id="about" className="section" data-aos="fade-up">
         <h2 className="section-title">About Us</h2>
         <img src={dfecLogo} alt="Logo" className="about-logo" />
         <CollapsibleParagraph text={longText} maxLength={2} />

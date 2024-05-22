@@ -4,7 +4,7 @@ import '../css/Contribute.css'
 export const Contribute = () => {
   return (
     <Fragment>
-        <section id="contribute" className="section">
+        <section id="contribute" className="section" data-aos="fade-up">
             <h2 className="section-title">Contribute Now</h2>
             <div className="contribute-div">
                 <div className="contribute-info">

@@ -1,35 +1,121 @@
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    align-items: center;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .footer a {
-    color: var(--secondary-color);
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    color: #000;
+footer {
+  position: relative;
+  background: linear-gradient(to bottom, #000000c4,var(--tertiary-color),var(--tertiary-color), var(--tertiary-color));
+  color: #e0e0e0;
+  padding: 40px 40px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  z-index: 2;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer-section h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #e4e4e4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section p a {
+  color: #e4e4e4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section p a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.footer-logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #d8d8d8;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+.footer-section table {
+  width: 80%;
+  color: #d8d8d8;
+}
+
+.footer-section table td {
+  padding: 5px 0;
+}
+
+.footer-section table tr td a {
+  color: #d8d8d8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section table tr td a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
 
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-  
-  .footer-content p {
-    margin: 5px 0;
-    text-align: center;
+  .footer-section {
+      max-width: 100%;
   }
-  
+
+  .footer-section table td {
+      display: block;
+  }
+}
