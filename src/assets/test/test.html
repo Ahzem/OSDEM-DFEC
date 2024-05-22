@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+
+    .place-card {
+        position: absolute;
+        cursor: pointer;
+        left: 50px;
+        top: 10px;
+        transition: 0.5s;
+        width: 220px;
+        height: 300px;
+        background: #000000f1;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        visibility: hidden;
+        z-index: 1000;
+    }
+
+    .place-img {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .place-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .place-info-div {
+        padding-top: 5px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .place-info-div h1 {
+        margin: 0;
+        padding: 0;
+        color: var(--secondary-color);
+        font-size: 20px;
+    }
+
+    .place-info-div p {
+        margin: 10px 0 0 0;
+        padding: 0;
+        color: #bdbdbd;
+        font-size: 14px;
+    }
+
+    .place-distance {
+        display: flex;
+        width: 220px;
+        gap: 5px;
+    }
+
+    .place-distance p {
+        width: 40%;
+        text-align: center;
+        color: var(--secondary-color);
+        font-size: 18px;
+        border: 1px solid var(--secondary-color);
+        padding: 5px;
+        border-radius: 50px;
+        margin-bottom: 5px;
+    }
+
+    .place-distance a{
+        color: var(--secondary-color);
+        font-size: 18px;
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    .place-distance a:hover {
+        color: #000000;
+    }
+
+    .place-distance a i {
+        font-size: 20px;
+    }
+
+    .place-info-icon {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        border: none;
+        background: #00000000;
+        color: var(--secondary-color);
+        border-radius: 50px;
+        cursor: pointer;
+        border: 1px solid #000000;
+    }
+
+    .place-info-icon img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .place-info-icon::after {
+        height: 0;
+        width: 0;
+        content: '';
+        position: absolute;
+        top: 44px;
+        left: 13px;
+        border: medium solid rgb(0, 0, 0);
+        border-width: 10px 10px 0 10px;
+        border-color: #000000 transparent transparent transparent ;
+    }
+
+
+    .place-info-icon:hover + .place-card {
+        visibility: visible;
+    }
+
+    .place-card:hover {
+        visibility: visible;
+    }
+
+</style>
+<body>
+
+    <div class="place-info-icon">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/school-building.png" alt="School"/>
+    </div>
+    <div id="place-card" class="place-card">
+        <div class="place-img">
+            <img src="../logo/dfec-logo-new.png" alt="logo">
+        </div>
+        <div class="place-info-div">
+            <h1>DFEC</h1>
+            <p>This is the hub of the OSDEM-DFEC Science Project and the boys' hostel, 
+                featuring separate self-learning facilities for a focused study environment.
+            </p>
+            <div class="place-distance">
+                <p><i class="fas fa-walking"></i> 0 min</p>
+                <p>0m</p>
+                <a href="https://maps.app.goo.gl/YKum1UCVDA33W2ch9" target="_blank"><i class="fas fa-map-marker-alt"></i> </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="place-info-icon">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/school-building.png" alt="School"/>
+    </div>
+    <div id="place-card" class="place-card">
+        <div class="place-img">
+            <img src="../logo/dfec-logo-new.png" alt="logo">
+        </div>
+        <div class="place-info-div">
+            <h1>Minhath National School</h1>
+            <p>Morning classes are held at Minhath National School, 
+                conveniently located near both the boys' and girls' hostels, 
+                ensuring safety and ease of access for our students.
+            </p>
+            <div class="place-distance">
+                <p><i class="fas fa-walking"></i> 3 min</p>
+                <p>260m</p>
+                <a href="https://maps.app.goo.gl/u5HF6jhpsxfvSEEe7" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> 
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="place-info-icon">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/bus.png" alt="train"/>
+    </div>
+    <div id="place-card" class="place-card">
+        <div class="place-img">
+            <img src="../logo/dfec-logo-new.png" alt="logo">
+        </div>
+        <div class="place-info-div">
+            <h1>Dikwella Bus Station</h1>
+            <p>Just 1 km from our facilities, the Dickwella Bus Station provides easy and convenient 
+                transport options. Both hostels are situated along the main road for straightforward commuting.
+            </p>
+            <div class="place-distance">
+                <p><i class="fas fa-walking"></i> 14 min</p>
+                <p>1km</p>
+                <a href="https://maps.app.goo.gl/HFfHsMrWtRfjVS6A8" target="_blank"><i class="fas fa-map-marker-alt"></i> </a>
+            </div>
+        </div>
+    </div>
+    <div class="place-info-icon">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/school-building.png" alt="train"/>
+    </div>
+    <div id="place-card" class="place-card">
+        <div class="place-img">
+            <img src="../logo/dfec-logo-new.png" alt="logo">
+        </div>
+        <div class="place-info-div">
+            <h1>WISDOM</h1>
+            <p>WISDOM offers a secure girls' hostel with CCTV protection and self-learning facilities. 
+                Afternoon classes for all students are conducted here in a safe environment.
+            </p>
+            <div class="place-distance">
+                <p><i class="fas fa-walking"></i> 4 min</p>
+                <p>270m</p>
+                <a href="https://maps.app.goo.gl/gAUDx7he7veFeSB18" target="_blank"><i class="fas fa-map-marker-alt"></i> </a>
+            </div>
+        </div>
+    </div>
+    <div class="place-info-icon">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/train.png" alt="train"/>
+    </div>
+    <div id="place-card" class="place-card">
+        <div class="place-img">
+            <img src="../logo/dfec-logo-new.png" alt="logo">
+        </div>
+        <div class="place-info-div">
+            <h1>Wewurukannala Railway Station</h1>
+            <p>For those traveling by train, the Wewurukannala Railway Station is conveniently 
+                located near our DFEC and WISDOM.
+            </p>
+            <div class="place-distance">
+                <p><i class="fas fa-walking"></i> 13 min</p>
+                <p>950m</p>
+                <a href="https://maps.app.goo.gl/KhttB7SVtzwzqhmn9" target="_blank"><i class="fas fa-map-marker-alt"></i> </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="place-info-icon">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/000000/mosque.png" alt="train"/>
+    </div>
+    <div id="place-card" class="place-card">
+        <div class="place-img">
+            <img src="../logo/dfec-logo-new.png" alt="logo">
+        </div>
+        <div class="place-info-div">
+            <h1>Muhaiyideen Jumma Mosque</h1>
+            <p>Boys can easily reach the Muhaiyideen Jumma Mosque, just 50 meters away, 
+                allowing them to stay connected with their spiritual practices.
+            </p>
+            <div class="place-distance">
+                <p><i class="fas fa-walking"></i> 5 min</p>
+                <p>400m</p>
+                <a href="https://maps.app.goo.gl/7Z6Z8Z8Z8Z8Z8Z8Z8" target="_blank"><i class="fas fa-map-marker-alt"></i> </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

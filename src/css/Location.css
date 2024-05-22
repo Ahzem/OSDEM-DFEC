@@ -1,0 +1,231 @@
+#location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    z-index: 100;
+    cursor: none;
+}
+
+#location .map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: contrast(1.2);
+    opacity: 0.9;
+}
+
+#location .map:hover {
+    filter: contrast(2.5);
+    opacity: 1;
+}
+
+.place-card {
+    position: absolute;
+    cursor: pointer;
+    left: 50px;
+    top: 10px;
+    transition: 0.5s;
+    width: 220px;
+    height: 300px;
+    background: #ffffff0e;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1000;
+    visibility: hidden; 
+}
+
+.place-img {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.place-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.place-info-div {
+    padding-top: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.place-info-div h1 {
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+.place-info-div p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.place-distance {
+    display: flex;
+    width: 220px;
+    gap: 5px;
+}
+
+.place-distance p {
+    width: 40%;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid var(--secondary-color);
+    padding: 5px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.place-distance a{
+    color: var(--primary-color);
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.place-distance a:hover {
+    color: var(--secondary-color);
+}
+
+.place-info-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background: #00000000;
+    color: var(--secondary-color);
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    z-index: 1000;
+}
+
+.place-info-icon::after {
+    height: 0;
+    width: 0;
+    content: '';
+    position: absolute;
+    top: 39px;
+    left: 10px;
+    border: medium solid rgb(255, 255, 255);
+    border-width: 10px 10px 0 10px;
+    border-color: #ffffff transparent transparent transparent ;
+}
+
+.place-info-icon:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.place-info-icon:hover .map {
+    filter: contrast(2.5);
+    opacity: 1;
+}
+
+.place-info-icon:hover + .place-card {
+    visibility: visible;
+}
+
+.place-card:hover {
+    visibility: visible;
+}
+
+.place-info-icon:hover + .place-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.icon-bus {
+    left: 30px;
+    top: 0px;
+}
+
+.card-bus {
+    left: 80px;
+    top: 0px;
+}
+
+.icon-train {
+    right: 30px;
+    bottom: 85px;
+}
+
+.card-train {
+    left: 920px;
+    top: 80px;
+}
+
+.icon-mosque {
+    left: 650px;
+    top: 170px;
+    z-index: 999;
+}
+
+.card-mosque {
+    left: 400px;
+    top: 170px;
+}
+
+.icon-dfec {
+    left: 680px;
+    top: 160px;
+}
+
+.card-dfec {
+    left: 730px;
+    top: 160px;
+}
+
+.icon-wisdom {
+    left: 505px;
+    top: 135px;
+}
+
+.card-wisdom {
+    left: 255px;
+    top: 135px;
+}
+
+.icon-minhath {
+    left: 620px;
+    top: 25px;
+}
+
+.card-minhath {
+    left: 670px;
+    top: 25px;
+}

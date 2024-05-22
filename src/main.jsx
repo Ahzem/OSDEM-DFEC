@@ -14,6 +14,7 @@ import { Services } from './components/Services.jsx'
 import { VisionMission } from './components/VisionMission.jsx'
 import MouseScroll from './components/MouseScroll.jsx'
 import Footer from './components/Footer.jsx'
+import { Location } from './components/Location.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <OurTeam />
     <BackToTopButton />
     <CustomCursor />
+    <Location />
     <Footer />
   </React.StrictMode>,
 )
