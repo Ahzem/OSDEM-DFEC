@@ -24,7 +24,7 @@ export const Location = () => {
                         <img src={osdem} alt="logo" />
                     </div>
                     <div className="place-info-div">
-                        <h1>DFEC</h1>
+                        <h1>OSDEM-DFEC</h1>
                         <p>This is the hub of the OSDEM-DFEC Science Project and the boys' hostel, 
                             featuring separate self-learning facilities for a focused study environment.
                         </p>

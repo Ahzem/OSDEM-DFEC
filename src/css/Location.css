@@ -156,21 +156,8 @@
     visibility: visible;
 }
 
-.place-info-icon:hover + .place-card {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .icon-bus {
-    left: 30px;
+    left: 2%;
     top: 0px;
 }
 
@@ -180,8 +167,8 @@
 }
 
 .icon-train {
-    right: 30px;
-    bottom: 85px;
+    left: 94%;
+    top: 72%;
 }
 
 .card-train {
@@ -190,8 +177,8 @@
 }
 
 .icon-mosque {
-    left: 650px;
-    top: 170px;
+    left: 52.5%;
+    top: 35%;
     z-index: 999;
 }
 
@@ -201,8 +188,8 @@
 }
 
 .icon-dfec {
-    left: 680px;
-    top: 160px;
+    left: 55%;
+    top: 32%;
 }
 
 .card-dfec {
@@ -211,8 +198,8 @@
 }
 
 .icon-wisdom {
-    left: 505px;
-    top: 135px;
+    left: 40.5%;
+    top: 27%;
 }
 
 .card-wisdom {
@@ -221,8 +208,8 @@
 }
 
 .icon-minhath {
-    left: 620px;
-    top: 25px;
+    left: 50%;
+    top: 5%;
 }
 
 .card-minhath {
