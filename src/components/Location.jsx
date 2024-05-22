@@ -1,5 +1,5 @@
 import { Fragment } from "react"
-import map from '../assets/Dikwella.png'
+import map from '../assets/map.png'
 import osdem from '../assets/osdem.png'
 import wisdom from '../assets/wisdom.png'
 import minhath from '../assets/minhath.png'
@@ -47,7 +47,7 @@ export const Location = () => {
                     </div>
                     <div className="place-info-div">
                         <h1>Minhath National School</h1>
-                        <p>Morning classes are held at Minhath National School, 
+                        <p>Morning classes are held at here, 
                             conveniently located near both the boys' and girls' hostels, 
                             ensuring safety and ease of access for our students.
                         </p>
@@ -69,7 +69,7 @@ export const Location = () => {
                     </div>
                     <div className="place-info-div">
                         <h1>Dikwella Bus Station</h1>
-                        <p>Just 1 km from our facilities, the Dickwella Bus Station provides easy and convenient 
+                        <p>Just 1 km from our OSDEM-DFEC & WISDOM, they provides easy and convenient 
                             transport options. Both hostels are situated along the main road for straightforward commuting.
                         </p>
                         <div className="place-distance">
@@ -133,7 +133,7 @@ export const Location = () => {
                     </div>
                     <div className="place-info-div">
                         <h1>Muhaiyideen Jumma Mosque</h1>
-                        <p>Boys can easily reach the Muhaiyideen Jumma Mosque, just 50 meters away, 
+                        <p>Boys can easily reach there, just 50 meters away, 
                             allowing them to stay connected with their spiritual practices.
                         </p>
                         <div className="place-distance">
