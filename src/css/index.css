@@ -20,6 +20,7 @@
   --title-color: #dfdfdf;
   --input-border-color: #00a7b36b;
   --section-border-color: #dfdfdf2c;
+  --list-font-color: #a5a5a5dc;
 }
 
 html {
@@ -38,6 +39,18 @@ html {
   -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section4 {
+  padding: 40px 80px;
+  margin: 20px 5%;
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-in-out;
+  background: rgba(0, 0, 0, 0.055);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
 }
 
 .section3 {
@@ -117,7 +130,7 @@ html {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #00a7b344;
+  background: #00a7b381;
   border-radius: 20px;
 }
 

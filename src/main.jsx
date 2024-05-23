@@ -17,6 +17,8 @@ import Footer from './components/Footer.jsx';
 import { Location } from './components/Location.jsx';
 import GrowthChart from './components/GrowthChart.jsx';
 import initAOS from './components/aos-init.js'; // Import the AOS initialization
+import Counter from './components/Counter.jsx';
+// import { Gallery } from './components/Gallery.jsx';
 
 const Main = () => {
   useEffect(() => {
@@ -31,11 +33,13 @@ const Main = () => {
       <Collobarate />
       <News />
       <About />
+      <Counter />
       <GrowthChart />
       <VisionMission />
       <Services />
-      <Contribute />
+      {/* <Gallery /> */}
       <OurTeam />
+      <Contribute />
       <BackToTopButton />
       <CustomCursor />
       <Location />

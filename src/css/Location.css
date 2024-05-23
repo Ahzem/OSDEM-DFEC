@@ -7,8 +7,8 @@
     animation: fadeInUp 1s ease-in-out;
     z-index: 1000;
     cursor: none;
-    --transparent-color: #00000000;
-    background: linear-gradient(to bottom, var(--transparent-color), var(--transparent-color), var(--transparent-color), var(--transparent-color), #000000c4);
+    --transparent-color: #00000005;
+    background: linear-gradient(to bottom, var(--transparent-color), var(--transparent-color), var(--transparent-color), #000000c4);
 }
 
 #location .map {

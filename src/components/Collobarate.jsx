@@ -7,7 +7,7 @@ export const Collobarate = () => {
   return (
     <Fragment>
         <section id="coloboration" className="section1">
-            <h2 className="section-title1">COLLABORATE WITH</h2>
+            <h2 className="section-title1" data-aos="fade-up">COLLABORATE WITH</h2>
                 <div className="collaboration-grid">
                     <div className="collaboration-item" data-aos="fade-right">
                         <img src={osdemLogo} alt="OSDEM Logo" />

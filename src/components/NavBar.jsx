@@ -9,6 +9,7 @@ export const NavBar = () => {
       <a href="#about">about us</a>
       <a href="#vision-mission">vision & mission</a>
       <a href="#services">our services</a>
+      <a href="#gallery">gallery</a>
       <a href="#team">our team</a>
       <a href="#contact">contact us</a>
     </div>

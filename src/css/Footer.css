@@ -1,10 +1,10 @@
 footer {
   position: relative;
-  background: linear-gradient(to bottom, #000000c4,var(--tertiary-color),var(--tertiary-color), var(--tertiary-color));
-  color: #e0e0e0;
+  background: linear-gradient(to bottom, #000000c4, var(--tertiary-color));
+  color: var(--list-font-color);
   padding: 40px 40px;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   z-index: 2;
 }
@@ -23,6 +23,22 @@ footer {
   margin-right: 20px;
 }
 
+ .footer-links {
+  display: flex;
+}
+
+.footer-section .left {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section .right {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-section h3 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -39,7 +55,7 @@ footer {
 }
 
 .footer-section ul li a {
-  color: #e4e4e4;
+  color: var(--list-font-color);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -54,7 +70,7 @@ footer {
 }
 
 .footer-section p a {
-  color: #e4e4e4;
+  color: var(--list-font-color);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -65,7 +81,7 @@ footer {
 }
 
 .footer-logo {
-  max-width: 120px;
+  max-width: 100px;
   margin-bottom: 20px;
 }
 
@@ -74,7 +90,7 @@ footer {
 }
 
 .social-links a {
-  color: #d8d8d8;
+  color: var(--list-font-color);
   margin-right: 10px;
   font-size: 24px;
   transition: color 0.3s;
@@ -85,8 +101,8 @@ footer {
 }
 
 .footer-section table {
-  width: 80%;
-  color: #d8d8d8;
+  width: 90%;
+  color: var(--list-font-color);
 }
 
 .footer-section table td {
@@ -94,7 +110,7 @@ footer {
 }
 
 .footer-section table tr td a {
-  color: #d8d8d8;
+  color: var(--list-font-color);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -102,6 +118,27 @@ footer {
 .footer-section table tr td a:hover {
   color: var(--primary-color);
   text-decoration: underline;
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.auth .horizontal-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 90%;
+  height: 1px;
+  background-color: var(--list-font-color);
+}
+
+.auth p {
+  margin: 5px 0;
 }
 
 @media (max-width: 768px) {

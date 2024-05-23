@@ -1,0 +1,65 @@
+/* <section className="counter section1">
+<div className="counter__item">
+    <h2 className="counter_num">4</h2>
+    <p>Future Engineers & Doctors in training</p>
+</div>
+<div className="counter__item">
+    <h2 className="counter_num">220</h2>
+    <p>Students impacted by our project</p>
+</div>
+<div className="counter__item">
+    <h2 className="counter_num">100</h2>
+    <p>Current scholars</p>
+</div>
+<div className="counter__item">
+    <h2 className="counter_num">110</h2>
+    <p>Talent available for universities</p>
+</div>
+</section> */
+
+
+/* Path: src/css/Counter.css */
+/* Compare this snippet from src/css/index.css: */
+/* } */
+/*  */
+
+.counter {
+  animation: fadeInUp 1s ease-in-out;
+  align-items: center;
+  display: flex;
+}
+
+.counter__item {
+    width: 280px;
+    height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid var(--section-border-color);
+  background: rgba(0, 0, 0, 0.055);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  cursor: none;
+}
+
+.counter_num {
+  font-size: 3em;
+  color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.counter__item p {
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--title-color);
+  margin-top: 10px;
+}
+
+.counter__item:hover .counter_num {
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}

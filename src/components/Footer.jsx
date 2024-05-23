@@ -15,17 +15,22 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-section quick-links">
                 <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#latest-news">Latest News</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#vision-mission">Vision & Mission</a></li>
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contribute">Contribute Now</a></li>
-                    <DownloadLink />
-                    <li><a href="https://www.minhathschool.com" target="_blank">Minhath National School</a></li>
-                </ul>
+                <div className="footer-links">
+                    <ul className='left'>
+                        <li><a href="#latest-news">Latest News</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#vision-mission">Vision & Mission</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                    </ul>
+                    <ul className='right'>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contribute">Contribute Now</a></li>
+                        <DownloadLink />
+                        <li><a href="https://www.minhathschool.com" target="_blank">Minhath National School</a></li>
+                    </ul>
+                </div>
             </div>
             <div className="footer-section contact-us">
                 <h3>Contact Us</h3>
@@ -63,6 +68,11 @@ const Footer = () => {
                     <a href="https://www.youtube.com/yourpage" target="_blank"><FontAwesomeIcon icon={faYoutube} /></a>
                 </div>
             </div>
+        </div>
+        <div className='auth'>
+            <div className='horizontal-line'></div>
+            <p>2024 © All Rights Reserved by OSDEM-DFEC Science Project</p>
+            <p>Design & Developed by <a href="https://ahzem.design" target="_blank">Ahzem</a></p>
         </div>
     </footer>
     </Fragment>

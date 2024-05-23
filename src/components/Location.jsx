@@ -13,7 +13,7 @@ import { faWalking, faSchool, faBus, faTrain, faMosque, faArrowAltCircleRight } 
 export const Location = () => {
   return (
     <Fragment>
-        <div id="location" className="section2" data-aos="fade-up">
+        <div id="location" className="section2">
             <img className="map" src={map} alt="location" />
 
             <div className="place-info-icon icon-dfec">
