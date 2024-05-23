@@ -1,38 +1,49 @@
-import { useEffect } from 'react';
+import { useEffect, useState} from 'react';
 import '../css/Counter.css'; // Import CSS
-import AOS from 'aos'; // Import AOS for scroll animations
 import 'aos/dist/aos.css'; // Import AOS styles
+import propTypes from 'prop-types';
 
-function Counter() {
-  
-    useEffect(() => {
-      AOS.init({
-        duration: 1200, // Animation duration
-        once: true, // Whether animation should happen only once
-      });
-  
-    }, []);
-  
-    return (
-      <section className="counter section1">
-        <div className="counter__item" data-aos="fade-up">
-          <h2 className="counter_num">4</h2>
-          <p>Future Engineers & Doctors in training</p>
-        </div>
-        <div className="counter__item" data-aos="fade-up">
-          <h2 className="counter_num">220</h2>
-          <p>Students impacted by our project</p>
-        </div>
-        <div className="counter__item" data-aos="fade-up">
-          <h2 className="counter_num">100</h2>
-          <p>Current scholar students</p>
-        </div>
-        <div className="counter__item" data-aos="fade-up">
-          <h2 className="counter_num">110</h2>
-          <p>Talent available for universities</p>
-        </div>
-      </section>
-    );
-  }
-  
-  export default Counter;
+const Counter = ({ number, title }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const animateCount = () => {
+      let currentCount = 0;
+      const intervalId = setInterval(() => {
+        currentCount += 1;
+        setCount(currentCount);
+        if (currentCount >= number) {
+          clearInterval(intervalId);
+        }
+      }, 40);
+      return () => clearInterval(intervalId); // Cleanup function
+    };
+
+    animateCount();
+  }, [number]); // Dependency array to trigger animation on number change
+
+  return (
+    <div className="counter__item"  data-aos="fade-up">
+      <h2 className="counter_num">{count}</h2>
+      <p>{title}</p>
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="counter section1">
+      <Counter number={4} title="Future Engineers & Doctors in training" />
+      <Counter number={220} title="Students impacted by our project" />
+      <Counter number={100} title="Current scholar students" />
+      <Counter number={110} title="Talent available for universities" />
+    </div>
+  );
+};
+
+export default App;
+
+Counter.propTypes = {
+  number: propTypes.number.isRequired,
+  title: propTypes.string.isRequired,
+};
