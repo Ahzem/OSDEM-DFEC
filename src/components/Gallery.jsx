@@ -14,14 +14,14 @@ const Gallery = () => {
   };
 
   return (
-    <section className="gallery section">
+    <section id='gallery' className="section1" data-aos="fade-up">
     <h2 className="section-title">Gallery</h2>
         <div className="gallery-grid">
             {sections.map((section, index) => (
-                <div key={index} className="gallery-colage">
+                <div key={index} className="gallery-colage" data-aos="fade-up">
                     <div className="colage-title">
                         <h2>{section.title}</h2>
-                        <p>{`13th March 2021`}</p>
+                        <p>{section.date}</p>
                             <div className="colage-img">
                                 {section.images.slice(0, 4).map((image, imgIndex) => (
                                 <img key={imgIndex} src={image.src} alt={image.alt} />
