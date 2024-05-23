@@ -115,7 +115,7 @@ const GrowthChart = () => {
     }
   };
 
-  return <div className='section3' data-aos="fade-up">
+  return <div className='section' data-aos="fade-up">
     <h1 className='.section-title'>
     Pass Percentage Growth Over Three Batches (2020-2022)
     </h1>

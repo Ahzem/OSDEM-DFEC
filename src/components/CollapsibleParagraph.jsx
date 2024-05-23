@@ -35,6 +35,6 @@ export default CollapsibleParagraph;
 
 
 CollapsibleParagraph.propTypes = {
-    text: PropTypes.string.isRequired,
+  text: PropTypes.node.isRequired,
     maxLength: PropTypes.number,
 };

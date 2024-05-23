@@ -3,7 +3,7 @@ import '../css/OurTeam.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import PropTypes from 'prop-types';
-import TeamData from '../assets/TeamData'
+import TeamData from './TeamData'
 
 function TeamCard(props) {
     return (
