@@ -1,4 +1,4 @@
-nav {
+.nav {
     position: fixed;
     top: 10px;
     left: 10%;
@@ -14,7 +14,7 @@ nav {
     border-bottom: 1px solid #ffffff38;
   }
   
-  nav a {
+  .nav a {
     color: #ffffffb2;
     margin: 0 25px;
     text-decoration: none;
@@ -24,10 +24,10 @@ nav {
     font-weight: 100;
   }
 
-  nav:hover a {
+  .nav:hover a {
     color: #ffffff;
   }
   
-  nav a:hover {
+  .nav a:hover {
     color: #00a7b3;
   }

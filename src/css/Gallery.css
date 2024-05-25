@@ -97,6 +97,22 @@
   color: var(--primary-color);
 }
 
+.more-images p {
+  text-align: center;
+  font-size: 3em;
+  color: var(--title-color);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 140px;
+  height: 90px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+
 .all-images-model {
   display: none;
   position: fixed;

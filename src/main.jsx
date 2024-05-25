@@ -20,6 +20,7 @@ import initAOS from './components/aos-init.js'; // Import the AOS initialization
 import Counter from './components/Counter.jsx';
 import Gallery from './components/Gallery.jsx';
 
+
 const Main = () => {
   useEffect(() => {
     initAOS(); // Initialize AOS
