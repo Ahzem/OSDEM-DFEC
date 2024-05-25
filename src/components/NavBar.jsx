@@ -4,7 +4,7 @@ import '../css/NavBar.css';
 export const NavBar = () => {
   return (
     <Fragment>
-      <nav data-aos="fade-down">
+      <nav className='nav' data-aos="fade-down">
         <div className="menu-icon" onClick={toggleMenu}>&#9776;</div>
           <div className="menu" >
             <a href="#about">about us</a>
