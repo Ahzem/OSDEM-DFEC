@@ -24,7 +24,7 @@ const TeamData = [
         education: ["BSc", "UG", "UOM"],
         image: "https://i.ibb.co/vm0M4CK/noeolyoh.png",
         facebook: "https://web.facebook.com/afzal2001",
-        instagram: "https://instagram.com/",
+        instagram: "https://www.instagram.com/afzalzawahir/",
         linkedin: "https://www.linkedin.com/in/-afzal/"
     },
     {
@@ -40,9 +40,9 @@ const TeamData = [
         name: "Mr. M. Afrath",
         subject: "Chemistry",
         education: ["BSc"],
-        image: "https://assets-global.website-files.com/641b63b78d9a83c2604f2728/641c73492d83e37e1ca3c4d2_ben-person.webp",
+        image: "https://i.imghippo.com/files/wq8Es1716645440.png",
         facebook: "https://web.facebook.com/afrath.mohamed.902",
-        instagram: "https://instagram.com/",
+        instagram: "https://www.instagram.com/mr_chem05/",
         linkedin: "https://www.linkedin.com/"
     },
     {
@@ -60,7 +60,7 @@ const TeamData = [
         education: ["BSc", "PGDE", "SLTS"],
         image: "https://i.ibb.co/tcvMgyc/ayak3oti.png",
         facebook: "https://web.facebook.com/ar.ramees",
-        instagram: "https://instagram.com/",
+        instagram: "https://www.instagram.com/ar_mohamed_ramees/",
         linkedin: "https://www.linkedin.com/"
     },
     {
@@ -76,8 +76,8 @@ const TeamData = [
         name: "Mr. M.S.M. Rasith",
         subject: "Biology",
         education: ["BSc", "PGDE", "SLTS"],
-        image: "https://assets-global.website-files.com/641b63b78d9a83c2604f2728/641c73492d83e37e1ca3c4d2_ben-person.webp",
-        facebook: "https://www.facebook.com/",
+        image: "https://i.imghippo.com/files/bLLHy1716644977.png",
+        facebook: "https://web.facebook.com/rasithttv",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/"
     },
@@ -103,10 +103,10 @@ const TeamData = [
         name: "Mr. M.N. Nisaf Ahamed",
         subject: "Combined Maths",
         education: ["BSc", "UG"],
-        image: "https://assets-global.website-files.com/641b63b78d9a83c2604f2728/641c73492d83e37e1ca3c4d2_ben-person.webp",
-        facebook: "https://www.facebook.com/",
+        image: "https://i.imghippo.com/files/rsust1716647825.png",
+        facebook: "https://web.facebook.com/mohamed.nisaf.148/",
         instagram: "https://instagram.com/",
-        linkedin: "https://www.linkedin.com/"
+        linkedin: "https://www.linkedin.com/in/nisaf-ahamed-4a9847222/"
     }
 ];
 
