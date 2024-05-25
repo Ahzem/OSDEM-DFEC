@@ -24,7 +24,7 @@ const Counter = ({ number, title }) => {
 
   return (
     <div className="counter__item"  data-aos="fade-up">
-      <h2 className="counter_num">{count}</h2>
+      <h2 className="counter_num">{count}+</h2>
       <p>{title}</p>
     </div>
   );

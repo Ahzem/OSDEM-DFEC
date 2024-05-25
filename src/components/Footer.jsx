@@ -25,10 +25,10 @@ const Footer = () => {
                     </ul>
                     <ul className='right'>
                         <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">FAQ</a></li>
                         <li><a href="#contribute">Contribute Now</a></li>
                         <DownloadLink />
-                        <li><a href="https://www.minhathschool.com" target="_blank">Minhath National School</a></li>
+                        <li><a href="https://web.facebook.com/minhath.nationalschool" target="_blank">Minhath National School</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,9 +65,9 @@ const Footer = () => {
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <a href="https://maps.app.goo.gl/YKum1UCVDA33W2ch9">Yonakapura, Beliatta R'd, Dikwella</a></p>
                 <div className="social-links">
                     <h3>Follow Us</h3>
-                    <a href="https://www.facebook.com/yourpage" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a href="https://www.linkedin.com/yourpage" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-                    <a href="https://www.youtube.com/yourpage" target="_blank"><FontAwesomeIcon icon={faYoutube} /></a>
+                    <a href="https://www.facebook.com/DFEC.DIKWELLA" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
+                    <a href="https://www.linkedin.com/company/osdem-dfec-science-project/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                    <a href="https://www.youtube.com/@dfec.scienceproject" target="_blank"><FontAwesomeIcon icon={faYoutube} /></a>
                 </div>
             </div>
         </div>

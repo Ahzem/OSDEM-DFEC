@@ -68,7 +68,7 @@
 /*Media Queries*/
 @media (max-width: 768px) {
   .counter__item {
-    width: 220px;
+    width: 240px;
     height: 150px;
     margin: 5px;
   }
