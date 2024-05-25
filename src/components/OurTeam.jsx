@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import '../css/OurTeam.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import PropTypes from 'prop-types';
 import TeamData from './TeamData'
 
@@ -21,7 +21,7 @@ function TeamCard(props) {
                 </div>
                 <div className="social-icons">
                     <a href={props.facebook}><FontAwesomeIcon icon={faFacebook} className="fab fa-facebook" /></a>
-                    <a href={props.twitter}><FontAwesomeIcon icon={faTwitter} className="fab fa-twitter" /></a>
+                    <a href={props.instagram}><FontAwesomeIcon icon={faInstagram} className="fab fa-twitter" /></a>
                     <a href={props.linkedin}><FontAwesomeIcon icon={faLinkedin} className="fab fa-linkedin" /></a>
                 </div>
             </div>
@@ -42,7 +42,7 @@ export const OurTeam = () => {
                         education={member.education}
                         image={member.image}
                         facebook={member.facebook}
-                        twitter={member.twitter}
+                        twitter={member.instagram}
                         linkedin={member.linkedin}
                     />
                 ))}
@@ -60,6 +60,6 @@ TeamCard.propTypes = {
     education: PropTypes.array,
     image: PropTypes.string,
     facebook: PropTypes.string,
-    twitter: PropTypes.string,
+    instagram: PropTypes.string,
     linkedin: PropTypes.string
 };
