@@ -155,8 +155,8 @@ footer {
   }
 
   .footer-section {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .footer-section .left {
@@ -164,7 +164,7 @@ footer {
   }
 
   .footer-section .right {
-    width: 100%;
+    width: 200px;
   }
 
   .footer-section h3 {
@@ -188,11 +188,15 @@ footer {
   }
 
   .footer-section table {
-    width: 100%;
+    width: 320px;
   }
 
   .footer-section table tr td a {
     font-size: 12px;
+  }
+
+  .auth p {
+    font-size: 14px;
   }
 
 }
