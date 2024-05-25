@@ -60,3 +60,31 @@
     background-color: var(--primary-color);
     color: var(--secondary-color);
   }
+
+
+
+  /*Media Queries*/
+  @media (max-width: 768px) {
+    .contribute-div {
+      flex-direction: column;
+      margin: 0 20px;
+    }
+  
+    .contribute-info {
+      width: 100%;
+    }
+  
+    .contribute-form {
+      width: 100%;
+    }
+  
+    .contribute-form form {
+      width: 100%;
+    }
+  
+    .contribute-form input {
+      width: 100%;
+    }
+  
+    
+  }

@@ -46,3 +46,28 @@
     color: var(--secondary-color);
     text-align: center;
   }
+
+
+  /*Media Queries*/
+  @media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .service-item {
+        padding: 10px;
+    }
+  
+    .service-item .icon {
+        font-size: 2em;
+    }
+  
+    .service-item h3 {
+        font-size: 1.2em;
+    }
+  
+    .service-item p {
+        font-size: .8em;
+    }
+  }
+  

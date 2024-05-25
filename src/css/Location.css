@@ -246,3 +246,118 @@
         transform: scale(1);
     }
 }
+
+
+/*Media Queries*/
+@media (max-width: 768px) {
+    #location {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 280px;
+        padding-bottom: 300px;
+        background: #00000000;
+    }
+
+    #location .map {
+        border-radius: 0;
+        transform: rotate(90deg);
+        width: 300%;
+        background: #00000000;
+    }
+
+    .place-card {
+        width: 200px;
+        height: 250px;
+    }
+    .place-card {
+        width: 150px;
+        height: 200px;
+    }
+
+    .place-info-div h1 {
+        font-size: 16px;
+    }
+
+    .place-info-div p {
+        font-size: 10px;
+    }
+
+    .place-distance p {
+        font-size: 12px;
+    }
+
+    .place-distance a {
+        font-size: 12px;
+    }
+
+    .place-info-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .place-info-icon::after {
+        top: 20px;
+        left: 4px;
+        border-width: 6px 6px 0 6px;
+    }
+
+    .icon-bus {
+        left: 2%;
+        top: 0px;
+    }
+
+    .card-bus {
+        left: 60px;
+        top: 0px;
+    }
+
+    .icon-train {
+        left: 94%;
+        top: 72%;
+    }
+
+    .card-train {
+        left: 620px;
+        top: 80px;
+    }
+
+    .icon-mosque {
+        left: 52.5%;
+        top: 35%;
+    }
+
+    .card-mosque {
+        left: 300px;
+        top: 70px;
+    }
+
+    .icon-dfec {
+        left: 55%;
+        top: 32%;
+    }
+
+    .card-dfec {
+        left: 500px;
+        top: 60px;
+    }
+
+    .icon-wisdom {
+        left: 40.5%;
+        top: 27%;
+    }
+
+    .card-wisdom {
+        left: 200px;
+        top: 35px;
+    }
+
+    .icon-minhath {
+        left: 50%;
+        top: 5%;
+    }
+
+    .card-minhath {
+        left: 450px;
+        top: 25px;
+    }
+}

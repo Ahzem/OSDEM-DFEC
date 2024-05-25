@@ -104,3 +104,47 @@
     .fab:hover {
       color: var(--primary-color);
     }
+
+
+    /*Media Queries*/
+
+    @media (max-width: 768px) {
+
+      .team-grid {
+        gap: 5px;
+      }
+      .team-member {
+        width: 160px;
+      }
+
+      .team-info h3 {
+        font-size: 0.7em;
+      }
+
+      .team-info p {
+        font-size: .7em;
+      }
+
+      .social-icons a {
+        font-size: 1.2em;
+      }
+
+      .social-icons i {
+        margin: 0 3px;
+      }
+
+      .team-education li {
+        padding: 2px 4px;
+        margin: 3px;
+      }
+
+      .team-education li {
+        font-size: 0.5em;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .team-member {
+        width: 150px;
+      }
+    }

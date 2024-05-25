@@ -63,3 +63,21 @@
   color: var(--secondary-color);
   transition: color 0.3s ease;
 }
+
+
+/*Media Queries*/
+@media (max-width: 768px) {
+  .counter__item {
+    width: 220px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .counter_num {
+    font-size: 1.8em;
+  }
+
+  .counter__item p {
+    font-size: .6em;
+  }
+} 

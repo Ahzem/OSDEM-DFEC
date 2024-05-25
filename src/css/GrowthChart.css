@@ -1,6 +1,4 @@
-import { Line } from 'react-chartjs-2';
-import 'aos/dist/aos.css';
-import '../css/GrowthChart.css';
+/* import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
@@ -117,7 +115,7 @@ const GrowthChart = () => {
     }
   };
 
-  return <div className='section chart' data-aos="fade-up">
+  return <div className='section' data-aos="fade-up">
     <h1 className='.section-title'>
     Pass Percentage Growth Over Three Batches (2020-2022)
     </h1>
@@ -125,4 +123,13 @@ const GrowthChart = () => {
     </div>;
 };
 
-export default GrowthChart;
+export default GrowthChart; */
+
+
+/* Path: src/css/GrowthChart.css */
+/* Media Queries*/
+@media (max-width: 768px) {
+    .chart {
+        display: none;
+    }
+}

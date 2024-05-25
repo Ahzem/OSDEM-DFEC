@@ -22,3 +22,10 @@
         background-color: var(--secondary-color);
         color: var(--primary-color);
     }
+
+    /*Media Queries*/
+    @media screen and (max-width: 768px) {
+        .about-logo {
+            max-width: 150px;
+        }
+    }

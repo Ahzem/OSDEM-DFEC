@@ -4,7 +4,7 @@ import '../css/NavBar.css';
 export const NavBar = () => {
   return (
     <Fragment>
-    <nav className='nav' data-aos="fade-down">
+    <nav data-aos="fade-down">
     <div className="menu" >
       <a href="#about">about us</a>
       <a href="#vision-mission">vision & mission</a>
