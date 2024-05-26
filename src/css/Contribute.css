@@ -15,8 +15,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
     width: 40%;
+  }
+
+  .alert {
+    width: 100%;
+    padding: 10px;
+    color: greenyellow;
+    text-align: center;
   }
   
   .contribute-form form {
