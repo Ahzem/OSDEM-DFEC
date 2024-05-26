@@ -102,7 +102,7 @@ const TeamData = [
     {
         name: "Mr. M.N. Nisaf Ahamed",
         subject: "Combined Maths",
-        education: ["BSc", "UG"],
+        education: ["BSc", "UG", "UCSC"],
         image: "https://i.imghippo.com/files/rsust1716647825.png",
         facebook: "https://web.facebook.com/mohamed.nisaf.148/",
         instagram: "https://instagram.com/",
