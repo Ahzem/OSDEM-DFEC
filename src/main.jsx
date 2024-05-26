@@ -19,6 +19,8 @@ import GrowthChart from './components/GrowthChart.jsx';
 import initAOS from './components/aos-init.js'; // Import the AOS initialization
 import Counter from './components/Counter.jsx';
 import Gallery from './components/Gallery.jsx';
+import { FeedBack } from './components/FeedBack.jsx';
+
 
 
 const Main = () => {
@@ -42,6 +44,7 @@ const Main = () => {
       <OurTeam />
       <Contribute />
       <BackToTopButton />
+      <FeedBack />
       <CustomCursor />
       <Location />
       <Footer />

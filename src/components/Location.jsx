@@ -1,5 +1,4 @@
 import { Fragment } from "react"
-import map from '../assets/map.png'
 import osdem from '../assets/osdem.png'
 import wisdom from '../assets/wisdom.png'
 import minhath from '../assets/minhath.png'
@@ -14,7 +13,7 @@ export const Location = () => {
   return (
     <Fragment>
         <div id="location" className="section2">
-            <img className="map" src={map} alt="location" />
+            <img className="map" src="https://i.imghippo.com/files/95VTL1716716234.png" alt="location" />
 
             <div className="place-info-icon icon-dfec">
                 <FontAwesomeIcon className="animation1" icon={faSchool} />

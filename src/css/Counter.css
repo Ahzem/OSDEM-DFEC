@@ -68,13 +68,13 @@
 /*Media Queries*/
 @media (max-width: 768px) {
   .counter__item {
-    width: 240px;
+    width: 300px;
     height: 150px;
     margin: 5px;
   }
 
   .counter_num {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   .counter__item p {

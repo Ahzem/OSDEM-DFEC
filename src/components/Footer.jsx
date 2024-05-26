@@ -5,8 +5,6 @@ import { faFacebook, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import logo from '../assets/logo/dfec-logo-new.png'
-import DownloadLink from './Download.jsx';
 
 const Footer = () => {
   return (
@@ -27,7 +25,7 @@ const Footer = () => {
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#contribute">Contribute Now</a></li>
-                        <DownloadLink />
+                        <li><a href="#">Feedback</a></li>
                         <li><a href="https://web.facebook.com/minhath.nationalschool" target="_blank">Minhath National School</a></li>
                     </ul>
                 </div>
@@ -60,9 +58,10 @@ const Footer = () => {
                 </table>
             </div>
             <div className="footer-section">
-                <img src={logo} alt="DFEC Logo" className="footer-logo" />
-                <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:dfec.dikwella@gmail.com">dfec.dikwella@gmail.com</a></p>
+                <img src="https://i.imghippo.com/files/9ZTME1716716161.png" alt="DFEC Logo" className="footer-logo" />
+                <p><b>OSDEM-DFEC Science Project</b></p>
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <a href="https://maps.app.goo.gl/YKum1UCVDA33W2ch9">Yonakapura, Beliatta R'd, Dikwella</a></p>
+                <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:dfec.dikwella@gmail.com">dfec.dikwella@gmail.com</a></p>
                 <div className="social-links">
                     <h3>Follow Us</h3>
                     <a href="https://www.facebook.com/DFEC.DIKWELLA" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>

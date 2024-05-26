@@ -23,7 +23,6 @@ const sections = [
       { src: 'https://z-p3-scontent.fcmb9-1.fna.fbcdn.net/v/t39.30808-6/334974494_608361240644516_7505715291735558867_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeETdJqFZaCHpO3q8em41Gc8EH7V2HafZjsQftXYdp9mOy4wOZul0zLZTDoAD5jLCAQH0N3ajF3BJ5SunCJmneWi&_nc_ohc=MbzN7nJItVwQ7kNvgEWmxXl&_nc_zt=23&_nc_ht=z-p3-scontent.fcmb9-1.fna&oh=00_AYAGwG2msv5htJr4K6DSR2h4J4OLL5Xj810zawv699CGuA&oe=6655061A', alt: 'Image 9' },
       { src: 'https://z-p3-scontent.fcmb9-1.fna.fbcdn.net/v/t39.30808-6/333051905_959081875459079_14519666449932865_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFejyD9u780l1xvVArqpPiWNyEUv0lZyKs3IRS_SVnIq0B44VzDP_xYAo4kH5ZnABKv5yo2wnJzceDB_IWTkqY7&_nc_ohc=CgL_C_gpaaUQ7kNvgHPj83E&_nc_zt=23&_nc_ht=z-p3-scontent.fcmb9-1.fna&oh=00_AYCrMOyIiFyJciApcz9_sGwhJ1Of_RfV4tqe4MkWf8q6oA&oe=665519D3', alt: 'Image 10' },
       { src: 'https://z-p3-scontent.fcmb9-1.fna.fbcdn.net/v/t39.30808-6/334992444_747765566721639_2233024707205554366_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFoYYVdfoCpRt6vFJ4jRZGRzkd865rNjGfOR3zrms2MZ9P1Q3l7f8oll2GxHIpRY4U2k5HhunrsyoUFKtwMwduu&_nc_ohc=-Gb61bKHo44Q7kNvgGmPIPk&_nc_zt=23&_nc_ht=z-p3-scontent.fcmb9-1.fna&oh=00_AYCFDW-LYFAYJS0tJbpgQLG0SROXt5FbiGZcMGarOGQsCg&oe=66551BD5', alt: 'Image 11' },
-      { src: '', alt: 'Image 12' },
     ],
   },
   {

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #000000;
+    }
+    #feedback-btn {
+        transform: rotate(-90deg);
+        position: fixed;
+        top: 50%;
+        right: 0;
+        padding: 10px 20px;
+        background-color: rgba(255, 0, 0, 0);
+        color: #fff;
+        border: 1px solid #f00;
+        border-radius: 50px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #feedback-btn:hover {
+        background-color: #ff0000;
+    }
+
+    #feedback-btn:active {
+        background-color: #f00;
+    }
+
+    #feedback-btn:focus {
+        outline: none;
+    }
+
+    #feedback-form {
+        position: fixed;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
+    #feedback-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #feedback-form input, #feedback-form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+
+    #feedback-form button {
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #feedback-form button:hover {
+        background-color: #333;
+    }
+
+    #feedback-form button:active {
+        background-color: #000;
+    }
+
+    #feedback-form button:focus {
+        outline: none;
+    }
+
+    #feedback-form button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    #feedback-form button:disabled:hover {
+        background-color: #ccc;
+    }
+
+    #feedback-form button:disabled:active {
+        background-color: #ccc;
+    }
+
+    #feedback-form button:disabled:focus {
+        outline: none;
+    }
+
+
+</style>
+    <body>
+        <button id="feedback-btn">Feedback</button>
+        <div id="feedback-form" style="display: none;">
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script>
+            const feedbackBtn = document.getElementById('feedback-btn');
+            const feedbackForm = document.getElementById('feedback-form');
+
+            feedbackBtn.addEventListener('click', () => {
+                feedbackForm.style.display = feedbackForm.style.display === 'none' ? 'block' : 'none';
+            });
+
+            feedbackForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                feedbackForm.style.display = 'none';
+            });
+
+            //when the user clicks anywhere outside the form, close it
+            //when the user clicks the any element inside the form, do not close it
+            window.addEventListener('click', (e) => {
+                if (e.target !== feedbackForm && e.target !== feedbackBtn) {
+                    feedbackForm.style.display = 'none';
+                }
+            });
+
+            feedbackForm.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        </script>
+   </body>
+</html>

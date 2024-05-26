@@ -28,4 +28,12 @@
         .about-logo {
             max-width: 150px;
         }
+
+        .learn-more {
+            font-size: 1em;
+        }
+
+        .learn-more {
+            padding: 10px 15px;
+        }
     }

@@ -100,7 +100,7 @@ const TeamData = [
         linkedin: "https://www.linkedin.com/in/waseema-beham/"
     },
     {
-        name: "Mr. M.N. Nisaf Ahamed",
+        name: "Mr. M.N. Nisaf",
         subject: "Combined Maths",
         education: ["BSc", "UG", "UCSC"],
         image: "https://i.imghippo.com/files/rsust1716647825.png",
