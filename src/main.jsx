@@ -22,8 +22,6 @@ import Gallery from './components/Gallery.jsx';
 import { FeedBack } from './components/FeedBack.jsx';
 // import { Reviews } from './components/Reviews.jsx';
 
-
-
 const Main = () => {
   useEffect(() => {
     initAOS(); // Initialize AOS
