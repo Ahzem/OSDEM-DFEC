@@ -7,13 +7,13 @@ export const News = () => {
         <section id="latest-news" className="section" data-aos="fade-up">
             <h2 className="section-title">Latest News</h2>
                 <div className="news-grid">
-                    <div className="news-item">
+                    {/* <div className="news-item">
                         <iframe src="https://en.everybodywiki.com/OSDEM-DFEC_Science_Project" scrolling="on" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         <div className="news-info">
                             <h3>Now We Are on EverybodyWiki!</h3>
                             <p>We are proud to announce that our science project OSDEM has been featured on EverybodyWiki. Click <a href="https://en.everybodywiki.com/OSDEM-DFEC_Science_Project" target="_blank" rel="noreferrer"><b>here</b></a> to read more.</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="news-item">
                         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2FDFEC.DIKWELLA%2Fposts%2Fpfbid02Q5Hn1fM6MZDRwGFR4LNTSUK6WKTSWziB5RsJDoCEBY4pLgqUWpgwKcrpUK3DEgHwl&show_text=true&width=500&is_preview=true" scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         <div className="news-info">
