@@ -37,6 +37,16 @@ footer {
   width: 180px;
   display: flex;
   flex-direction: column;
+  margin-left: -10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-info .right {
+  margin-left: -20px;
 }
 
 .footer-section h3 {
@@ -82,11 +92,6 @@ footer {
 
 .footer-logo {
   max-width: 100px;
-  margin-bottom: 20px;
-}
-
-.social-links {
-  margin-top: 20px;
 }
 
 .social-links a {
@@ -98,26 +103,6 @@ footer {
 
 .social-links a:hover {
   color: var(--primary-color);
-}
-
-.footer-section table {
-  width: 90%;
-  color: var(--list-font-color);
-}
-
-.footer-section table td {
-  padding: 5px 0;
-}
-
-.footer-section table tr td a {
-  color: var(--list-font-color);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-section table tr td a:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
 }
 
 .auth {
@@ -187,15 +172,15 @@ footer {
     width: 100%;
   }
 
-  .footer-section table {
-    width: 320px;
-  }
-
-  .footer-section table tr td a {
-    font-size: 12px;
-  }
-
   .auth p {
+    font-size: 14px;
+  }
+
+  .contact-info .right {
+    margin-left: -20px;
+  }
+
+  .footer-section ul li {
     font-size: 14px;
   }
 

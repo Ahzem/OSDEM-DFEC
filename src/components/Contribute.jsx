@@ -7,6 +7,7 @@ export const Contribute = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const name = event.target.name.value; // Get the value of the name input field
 
     emailjs.sendForm(
       'service_zk9f84a',      // Replace with your EmailJS service ID
@@ -15,7 +16,7 @@ export const Contribute = () => {
       'ggSehWtA50vGVDqoG'    // Replace with your EmailJS Public Key (User ID)
     ).then(
       (result) => {
-        setMessage('The message was sent successfully');
+        setMessage(`Thank you for your contribution ${name}! We will get back to you soon.`);
         console.log('EmailJS Result:', result.text);
         event.target.reset();
       },
@@ -42,9 +43,9 @@ export const Contribute = () => {
               <input type="tel" name="phone" placeholder="Your Mobile Number" required />
               <button type="submit">Contribute</button>
             </form>
-            {message && <div className="alert">{message}</div>}
           </div>
         </div>
+            {message && <div className="alert">{message}</div>}
       </section>
     </Fragment>
   );

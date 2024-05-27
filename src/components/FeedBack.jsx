@@ -1,6 +1,8 @@
 import { Fragment, useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../css/FeedBack.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export const FeedBack = () => {
   const [message, setMessage] = useState('');
@@ -8,6 +10,7 @@ export const FeedBack = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const name = event.target.name.value; // Get the value of the name input field
 
     emailjs.sendForm(
       'service_zk9f84a',      // Replace with your EmailJS service ID
@@ -16,7 +19,8 @@ export const FeedBack = () => {
       'ggSehWtA50vGVDqoG'    // Replace with your EmailJS Public Key (User ID)
     ).then(
       (result) => {
-        setMessage('The message was sent successfully');
+        // Handle success with a personalized message
+        setMessage(`Thank you for your feedback, ${name}!`); // Update the setMessage function call
         console.log('EmailJS Result:', result.text);
         event.target.reset();
       },
@@ -33,7 +37,24 @@ export const FeedBack = () => {
 
   return (
     <Fragment>
-      <button className='feedback-btn' onClick={toggleForm}>Feedback</button>
+      <div className='social-media'>
+        <div className='vertical-line top'></div>
+          <a href='https://www.facebook.com/DFEC.DIKWELLA/' target='_blank' rel='noreferrer'>
+            <FontAwesomeIcon icon={faFacebook} />
+            <span>Follow us on Facebook</span>
+          </a>
+          <a href='https://www.linkedin.com/company/osdem-dfec-science-project/' target='_blank' rel='noreferrer'>
+            <FontAwesomeIcon icon={faLinkedin} />
+            <span>Follow us on LinkedIn</span>
+          </a>
+          <a href='https://www.youtube.com/@dfec.scienceproject' target='_blank' rel='noreferrer'>
+            <FontAwesomeIcon icon={faYoutube} />
+            <span>Follow us on YouTube</span>
+          </a>
+        <div className='vertical-line bottom'></div>
+      </div>
+      <button className='feedback-btn' onClick={toggleForm}>Feedback
+      <span className='feedback-text'>Your feedback is important to us</span></button>
       {isFormVisible && (
         <div className="feedback-div">
           <div className="feedback-form">
