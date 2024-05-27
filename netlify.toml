@@ -1,7 +1,0 @@
-[build]
-  functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/reviews"
-  to = "/.netlify/functions/get-reviews"
-  status = 200
