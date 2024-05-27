@@ -20,7 +20,7 @@ import initAOS from './components/aos-init.js'; // Import the AOS initialization
 import Counter from './components/Counter.jsx';
 import Gallery from './components/Gallery.jsx';
 import { FeedBack } from './components/FeedBack.jsx';
-import { Reviews } from './components/Reviews.jsx';
+// import { Reviews } from './components/Reviews.jsx';
 
 
 
@@ -47,7 +47,7 @@ const Main = () => {
       <BackToTopButton />
       <FeedBack />
       <CustomCursor />
-      <Reviews />
+      {/* <Reviews /> */}
       <Location />
       <Footer />
     </React.StrictMode>

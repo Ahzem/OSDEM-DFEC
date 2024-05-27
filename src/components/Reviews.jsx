@@ -25,7 +25,7 @@ export const Reviews = () => {
 
   const fetchGoogleReviews = async () => {
     try {
-      const response = await axios.get(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJbV3HCcc34ToRP0QS5s_EOTI&fields=reviews&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`);
+      const response = await axios.get(`/api/maps/api/place/details/json?place_id=ChIJbV3HCcc34ToRP0QS5s_EOTI&fields=reviews&key=AIzaSyAHDTxWC6_0ljmZInUoMKCEaOio5mqLl_o`);
       console.log('Google Reviews Response:', response.data);
       if (response.data.result && response.data.result.reviews) {
         setGoogleReviews(response.data.result.reviews);
@@ -36,7 +36,7 @@ export const Reviews = () => {
       console.error('Error fetching Google reviews:', error);
       setErrorMessage('Error fetching reviews');
     }
-  };  
+  };
 
   return (
     <Fragment>
