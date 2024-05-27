@@ -48,10 +48,6 @@
     border: 1px solid var(--primary-color);
   }
   
-  button {
-    font-family: 'chakra petch', sans-serif;
-  }
-  
   .contribute-form button {
     font-size: 1.2em;
     padding-top: 7px;
