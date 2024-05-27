@@ -25,7 +25,7 @@ export const Reviews = () => {
 
   const fetchGoogleReviews = async () => {
     try {
-      const response = await axios.get(`/api/maps/api/place/details/json?place_id=ChIJbV3HCcc34ToRP0QS5s_EOTI&fields=reviews&key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`);
+      const response = await axios.get('/api/reviews');
       console.log('Google Reviews Response:', response.data);
       if (response.data.result && response.data.result.reviews) {
         setGoogleReviews(response.data.result.reviews);
