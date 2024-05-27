@@ -94,7 +94,7 @@ const TeamData = [
         name: "Miss K.W. Beham",
         subject: "Combined Maths",
         education: ["BSc", "MSc(R)"],
-        image: "https://thumbs.dreamstime.com/b/muslim-woman-icon-hijab-vector-illustration-flat-design-73957334.jpg",
+        image: "https://i.imghippo.com/files/co6jG1716822078.jpg",
         facebook: "https://web.facebook.com/johi.sreya.3",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/in/waseema-beham/"

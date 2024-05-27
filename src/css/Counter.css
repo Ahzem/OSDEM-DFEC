@@ -1,28 +1,3 @@
-/* <section className="counter section1">
-<div className="counter__item">
-    <h2 className="counter_num">4</h2>
-    <p>Future Engineers & Doctors in training</p>
-</div>
-<div className="counter__item">
-    <h2 className="counter_num">220</h2>
-    <p>Students impacted by our project</p>
-</div>
-<div className="counter__item">
-    <h2 className="counter_num">100</h2>
-    <p>Current scholars</p>
-</div>
-<div className="counter__item">
-    <h2 className="counter_num">110</h2>
-    <p>Talent available for universities</p>
-</div>
-</section> */
-
-
-/* Path: src/css/Counter.css */
-/* Compare this snippet from src/css/index.css: */
-/* } */
-/*  */
-
 .counter {
   animation: fadeInUp 1s ease-in-out;
   align-items: center;
