@@ -34,9 +34,9 @@ const App = () => {
   return (
     <div className="counter section1">
       <Counter number={4} title="Future Engineers & Doctors in training" />
-      <Counter number={220} title="Students impacted by our project" />
-      <Counter number={100} title="Current scholar students" />
-      <Counter number={110} title="Talent available for universities" />
+      <Counter number={160} title="Students impacted by our project" />
+      <Counter number={75} title="Current scholar students" />
+      <Counter number={50} title="Talent available for universities" />
     </div>
   );
 };
