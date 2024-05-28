@@ -114,11 +114,12 @@
         gap: 5px;
       }
       .team-member {
-        width: 160px;
+        width: 150px;
       }
 
       .team-info h3 {
         font-size: 0.7em;
+        margin-top: -10px;
       }
 
       .team-info p {
@@ -135,7 +136,8 @@
 
       .team-education li {
         padding: 2px 4px;
-        margin: 3px;
+        margin: 2px;
+        margin-bottom: -8px;
       }
 
       .team-education li {
@@ -145,6 +147,6 @@
 
     @media (max-width: 500px) {
       .team-member {
-        width: 150px;
+        width: 140px;
       }
     }

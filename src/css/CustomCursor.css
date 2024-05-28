@@ -8,7 +8,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: background 0.3s, transform 0.1s;
-    z-index: 0; /* Ensure it appears above other elements */
+    z-index: 0;
   }
   
   .custom-cursor-hover {
@@ -18,3 +18,10 @@
     transform: translate(-50%, -50%) scale(1.5);
   }
   
+
+  /*Media Queries*/
+  @media screen and (max-width: 768px) {
+    .custom-cursor {
+      display: none;
+    }
+  }

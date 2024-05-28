@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import '../css/Footer.css'; // Ensure to create and adjust the CSS file path as needed
+import '../css/Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -50,7 +50,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="footer-section">
+            <div className="footer-section logo">
                 <img src="https://i.imghippo.com/files/9ZTME1716716161.png" alt="DFEC Logo" className="footer-logo" />
                 <p><b>OSDEM-DFEC Science Project</b></p>
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <a href="https://maps.app.goo.gl/YKum1UCVDA33W2ch9">Yonakapura, Beliatta R'd, Dikwella</a></p>

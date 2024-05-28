@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import '../css/BackToTopButton.css';  // Adjust the path as needed
+import '../css/BackToTopButton.css';
 
 const BackToTopButton = () => {
   useEffect(() => {

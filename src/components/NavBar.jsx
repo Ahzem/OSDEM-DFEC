@@ -1,11 +1,16 @@
 import { Fragment } from 'react';
 import '../css/NavBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export const NavBar = () => {
   return (
     <Fragment>
       <nav className='nav' data-aos="fade-down">
-        <div className="menu-icon" onClick={toggleMenu}>&#9776;</div>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <FontAwesomeIcon icon={faBars} className='fa-bars' />
+          <img src="https://i.imghippo.com/files/vGNyR1716860602.png" alt="logo" />
+        </div>
           <div className="menu" >
             <a href="#about">about us</a>
             <a href="#vision-mission">vision & mission</a>

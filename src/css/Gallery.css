@@ -142,7 +142,7 @@
   }
 
   .colage-img img {
-    width: 130px;
+    width: 120px;
     height: 70px;
   }
 
@@ -156,7 +156,11 @@
 
   .more-images p {
     font-size: 2em;
-    width: 130px;
+    width: 120px;
     height: 70px;
+  }
+
+  .see-more-btn button {
+    padding: 5px 12px;
   }
 }

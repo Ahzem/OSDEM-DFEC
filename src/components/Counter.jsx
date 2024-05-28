@@ -1,6 +1,6 @@
 import { useEffect, useState} from 'react';
-import '../css/Counter.css'; // Import CSS
-import 'aos/dist/aos.css'; // Import AOS styles
+import '../css/Counter.css';
+import 'aos/dist/aos.css';
 import propTypes from 'prop-types';
 
 const Counter = ({ number, title }) => {
@@ -16,11 +16,11 @@ const Counter = ({ number, title }) => {
           clearInterval(intervalId);
         }
       }, 40);
-      return () => clearInterval(intervalId); // Cleanup function
+      return () => clearInterval(intervalId); 
     };
 
     animateCount();
-  }, [number]); // Dependency array to trigger animation on number change
+  }, [number]); 
 
   return (
     <div className="counter__item"  data-aos="fade-up">

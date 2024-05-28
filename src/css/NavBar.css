@@ -36,6 +36,10 @@
     display: none;
   }
 
+  .menu-icon img {
+    visibility: hidden;
+  }
+
   /*Media Queries*/
     @media (max-width: 768px) {
       .nav {
@@ -80,6 +84,31 @@
     
       .nav.open .menu {
         display: flex;
+      }
+
+      .nav.open .menu-icon {
+        color: #00a7b3;
+      }
+
+      .menu-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: -10px;
+      }
+
+      .menu-icon .fa-bars {
+        margin-right: 10px;
+        margin-bottom: 5px;
+      }
+
+      .menu-icon img {
+        visibility: visible;
+        height: 40px;
+        margin-left: 100px;
+        margin-top: 10px;
+        opacity: 0.8;
       }
     }
     

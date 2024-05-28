@@ -10,17 +10,16 @@ export const FeedBack = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const name = event.target.name.value; // Get the value of the name input field
+    const name = event.target.name.value;
 
     emailjs.sendForm(
-      'service_zk9f84a',      // Replace with your EmailJS service ID
-      'template_bartgrb',    // Replace with your EmailJS template ID
+      'service_zk9f84a',      // EmailJS service ID
+      'template_bartgrb',    //  EmailJS template ID
       event.target,
-      'ggSehWtA50vGVDqoG'    // Replace with your EmailJS Public Key (User ID)
+      'ggSehWtA50vGVDqoG'    //EmailJS Public Key (User ID)
     ).then(
       (result) => {
-        // Handle success with a personalized message
-        setMessage(`Thank you for your feedback, ${name}!`); // Update the setMessage function call
+        setMessage(`Thank you for your feedback, ${name}!`);
         console.log('EmailJS Result:', result.text);
         event.target.reset();
       },

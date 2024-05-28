@@ -1,7 +1,7 @@
 .about-logo {
     display: block;
-    margin: 0 auto 20px auto; /* Centers the logo and adds some bottom margin */
-    max-width: 200px; /* Adjust as needed */
+    margin: 0 auto 20px auto;
+    max-width: 200px; 
     height: auto;
   }
 
@@ -26,7 +26,7 @@
     /*Media Queries*/
     @media screen and (max-width: 768px) {
         .about-logo {
-            max-width: 150px;
+            max-width: 120px;
         }
 
         .learn-more {
@@ -34,6 +34,6 @@
         }
 
         .learn-more {
-            padding: 10px 15px;
+            padding: 5px 10px;
         }
     }

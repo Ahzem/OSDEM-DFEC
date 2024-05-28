@@ -149,7 +149,8 @@ footer {
   }
 
   .footer-section .right {
-    width: 200px;
+    width: 250px;
+    margin-left: -30px;
   }
 
   .footer-section h3 {
@@ -173,15 +174,22 @@ footer {
   }
 
   .auth p {
-    font-size: 14px;
+    font-size: 12px;
+    text-align: center;
   }
 
   .contact-info .right {
-    margin-left: -20px;
+    margin-left: -50px;
   }
 
   .footer-section ul li {
     font-size: 14px;
   }
 
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 }

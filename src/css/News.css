@@ -24,3 +24,31 @@
   .news-info h3, p{
     text-align: left;
   }
+
+  .news-info h3 {
+    font-size: 1.3em;
+    margin: 0;
+    color: var(--title-color);
+  }
+
+  .news-info p {
+    font-size: 1.1em;
+    color: var(--text-color);
+  }
+
+
+  /*`Media Queries*/
+  @media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+  }
+  @media screen and (max-width: 768px) {
+    .news-info h3 {
+      font-size: 1.2em;
+    }
+    .news-info p {
+      font-size: 1em;
+    }
+  }

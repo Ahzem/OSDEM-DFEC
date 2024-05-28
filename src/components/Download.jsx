@@ -6,7 +6,7 @@ const DownloadLink = () => {
     const handleDownloadClick = (e) => {
       e.preventDefault();
       if (confirm('Do you want to download?')) {
-        window.location.href = pdf; // Replace with the actual download link
+        window.location.href = pdf;
       }
     };
 

@@ -9,7 +9,7 @@
   
   #mouse-scroll span {
     display: block;
-    width: 5px;
+    width: 4px;
     height: 5px;
     transform: rotate(45deg);
     border-right: 2px solid var(--secondary-color);
@@ -81,6 +81,19 @@
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  /*media queries*/
+  @media screen and (max-width: 768px) {
+    #mouse-scroll .mouse{
+      display: none;
+    }
+
+    #mouse-scroll span {
+      width: 15px;
+      height: 15px;
+      margin: 0 0 2px 3px;
     }
   }
   
