@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import pdf from '../assets/test/OSDEM.pdf';
+import pdf from '../assets/doc/OSDEM.pdf';
 
 const DownloadLink = () => {
   useEffect(() => {
