@@ -6,6 +6,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import DownloadLink from './Download';
+import logo from '../assets/logo/dfec-logo-new.png';
 
 const Footer = () => {
   return (
@@ -51,7 +52,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-section logo">
-                <img src="https://i.imghippo.com/files/9ZTME1716716161.png" alt="DFEC Logo" className="footer-logo" />
+                <img src={logo} alt="DFEC Logo" className="footer-logo" />
                 <p><b>OSDEM-DFEC Science Project</b></p>
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <a href="https://maps.app.goo.gl/YKum1UCVDA33W2ch9">Yonakapura, Beliatta R'd, Dikwella</a></p>
                 <p><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:dfec.dikwella@gmail.com">dfec.dikwella@gmail.com</a></p>

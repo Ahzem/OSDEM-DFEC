@@ -1,9 +1,8 @@
 .custom-cursor {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background: #ffffff;
-    filter: blur(1px);
+    background: var(--secondary-color);
     position: absolute;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -24,4 +23,8 @@
     .custom-cursor {
       display: none;
     }
+  }
+
+  body {
+    cursor: none;
   }
