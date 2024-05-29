@@ -31,7 +31,7 @@ const TeamData = [
         name: "Mr. M.F.M. Rizwan",
         subject: "Chemistry",
         education: ["BSc", "PGDE", "MSc(R)"],
-        image: "https://i.imghippo.com/files/Z0UE71716639618.png",
+        image: "https://i.ibb.co/XZVxBKN/dg3ckjd5.png",
         facebook: "https://web.facebook.com/riswan.mohamed.961",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/"
@@ -40,7 +40,7 @@ const TeamData = [
         name: "Mr. M. Afrath",
         subject: "Chemistry",
         education: ["BSc"],
-        image: "https://i.imghippo.com/files/wq8Es1716645440.png",
+        image: "https://i.ibb.co/7J8F28B/afrath.png",
         facebook: "https://web.facebook.com/afrath.mohamed.902",
         instagram: "https://www.instagram.com/mr_chem05/",
         linkedin: "https://www.linkedin.com/"
@@ -49,7 +49,7 @@ const TeamData = [
         name: "Mr. J.M. Lareef",
         subject: "Chemistry",
         education: ["BSc", "UG", "UOR"],
-        image: "https://i.imghippo.com/files/ryn6S1716640553.png",
+        image: "https://i.ibb.co/DwT7DJp/daj6fbec.png",
         facebook: "https://web.facebook.com/mohamed.lareef.986/",
         instagram: "https://instagram.com/",
         linkedin: "hhttps://www.linkedin.com/in/lareef100/"
@@ -67,7 +67,7 @@ const TeamData = [
         name: "Mr. A.L. Miskeen",
         subject: "Biology",
         education: ["PGDE", "MSc", "SLPS"],
-        image: "https://i.imghippo.com/files/GZC3X1716640738.png",
+        image: "https://i.ibb.co/zxqgSrp/qvp102oq.png",
         facebook: "https://web.facebook.com/miskeenvidane.latheef.7",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/"
@@ -76,7 +76,7 @@ const TeamData = [
         name: "Mr. M.S.M. Rasith",
         subject: "Biology",
         education: ["BSc", "PGDE", "SLTS"],
-        image: "https://i.imghippo.com/files/bLLHy1716644977.png",
+        image: "https://i.ibb.co/5cKZYjp/lgn54uhe.png",
         facebook: "https://web.facebook.com/rasithttv",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/"
@@ -94,7 +94,7 @@ const TeamData = [
         name: "Miss K.W. Beham",
         subject: "Combined Maths",
         education: ["BSc", "MSc(R)"],
-        image: "https://i.imghippo.com/files/co6jG1716822078.jpg",
+        image: "https://i.ibb.co/MpQ6Ckd/445380669-1368362780505657-3228126775867511326-n.jpg",
         facebook: "https://web.facebook.com/johi.sreya.3",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/in/waseema-beham/"
@@ -103,7 +103,7 @@ const TeamData = [
         name: "Mr. M.N. Nisaf",
         subject: "Combined Maths",
         education: ["BSc", "UG", "UCSC"],
-        image: "https://i.imghippo.com/files/rsust1716647825.png",
+        image: "https://i.ibb.co/42H6Bv5/xdg5tpiv.png",
         facebook: "https://web.facebook.com/mohamed.nisaf.148/",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/in/nisaf-ahamed-4a9847222/"

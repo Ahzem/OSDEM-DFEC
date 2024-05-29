@@ -5,6 +5,7 @@ import minhath from '../assets/images/minhath.png'
 import railway from '../assets/images/railway.png'
 import bus from '../assets/images/bus.png'
 import mosque from '../assets/images/mosque.png'
+import map from '../assets/images/map.png'
 import '../css/Location.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWalking, faSchool, faBus, faTrain, faMosque, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
@@ -13,7 +14,7 @@ export const Location = () => {
   return (
     <Fragment>
         <div id="location" className="section2">
-            <img className="map" src="https://i.imghippo.com/files/95VTL1716716234.png" alt="location" />
+            <img className="map" src={map} alt="location" />
 
             <div className="place-info-icon icon-dfec">
                 <FontAwesomeIcon className="animation1" icon={faSchool} />

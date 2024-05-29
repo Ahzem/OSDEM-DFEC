@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import '../css/about.css';
+import logo from '../assets/logo/dfec-logo-new.png'
 import CollapsibleParagraph from './CollapsibleParagraph.jsx';
 
 const longText = (
@@ -33,7 +34,7 @@ export const About = () => {
     <Fragment>
       <section id="about" className="section" data-aos="fade-up">
         <h2 className="section-title">About Us</h2>
-        <img src="https://i.imghippo.com/files/9ZTME1716716161.png" alt="Logo" className="about-logo" />
+        <img src={logo} alt="Logo" className="about-logo" />
         <CollapsibleParagraph text={longText} maxLength={1} />
       </section>
     </Fragment>
