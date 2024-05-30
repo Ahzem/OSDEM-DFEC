@@ -9,6 +9,10 @@
     }
   }
   
+  #bg-video {
+    display: block;
+  }
+
   .video-background {
     position: fixed;
     top: 0;
