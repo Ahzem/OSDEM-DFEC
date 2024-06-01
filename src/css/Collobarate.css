@@ -12,11 +12,6 @@
     transition: transform 0.3s ease;
   }
   
-  .collaboration-item:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s ease;
-  }
-  
   .collaboration-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
