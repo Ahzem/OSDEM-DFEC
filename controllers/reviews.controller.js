@@ -3,7 +3,8 @@ export const ReviewIndex = (req, res) => {
 };
 
 export const ReviewCreate = (req, res) => {
-    res.send("Create a review");
+    console.log(req.body);
+    return res.json(req.body);
 }
 
 export const ReviewUpdate = (req, res) => {
