@@ -4,7 +4,7 @@ const TeamData = [
         name: "Mr. M.R. Ruzaik",
         subject: "Physics",
         education: ["BSc", "MSc(R)", "UOM"],
-        image: "https://i.ibb.co/R0x5DWf/tba0srua.png",
+        image: "https://i.ibb.co/51QhqYw/ruzaik.png",
         facebook: "https://web.facebook.com/mohoideenrizvi.ruzaik",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/in/ruzaik-rizvi-866414115/"
@@ -85,7 +85,7 @@ const TeamData = [
         name: "Mr. M.S.M. Safan",
         subject: "Combined Maths",
         education: ["BSc", "PGDE"],
-        image: "https://i.ibb.co/fCJX9TM/g8u4vo1u.png",
+        image: "https://i.ibb.co/K61Yq9G/safan.png",
         facebook: "https://web.facebook.com/profile.php?id=100008274302439",
         instagram: "https://instagram.com/",
         linkedin: "https://www.linkedin.com/"

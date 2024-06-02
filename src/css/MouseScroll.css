@@ -9,7 +9,7 @@
   
   #mouse-scroll span {
     display: block;
-    width: 4px;
+    width: 5px;
     height: 5px;
     transform: rotate(45deg);
     border-right: 2px solid var(--secondary-color);
