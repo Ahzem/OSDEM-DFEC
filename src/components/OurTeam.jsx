@@ -8,7 +8,7 @@ import TeamData from './TeamData'
 function TeamCard(props) {
     return (
         <Fragment>
-            <div className="team-member" data-aos="fade-up">
+            <div className="team-member" data-aos="fade-up" data-aos-delay="200">
                 <img src={props.image} alt={props.name} />
                 <div className="team-info">
                     <h3>{props.name}</h3>

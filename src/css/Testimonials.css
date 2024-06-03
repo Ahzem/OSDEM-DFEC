@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&family=Space+Mono&display=swap');
+
   .testimonials-container {
     display: flex;
     justify-content: center;
@@ -6,31 +8,41 @@
   }
   
   .testimonial {
-    background: #f9f9f938;
-    border: 1px solid #ddd;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid var(--input-border-color);
     border-radius: 5px;
     padding: 20px;
     width: 280px;
   }
-  
+
+  .testimonial h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+  }
+
+  .testimonial small {
+    color: var(--list-font-color);
+    font-size: 1rem;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial p {
+    font-family: 'arial', 'Kavivanar', sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    /*italic font*/
+    font-style: italic;
+    font-weight: 300;
+  }
+
   .testimonial-navigation {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     gap: 10px;
-  }
-  
-  .testimonial-navigation button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .testimonial-navigation button:hover {
-    background: #0056b3;
   }
   
   .btn {
@@ -64,3 +76,97 @@
     align-items: center;
     z-index: 1009;
   }
+
+  form p {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  form small {
+    font-size: 0.9rem;
+    margin-top: -18px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .close-stdnt {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    top: 20%;
+    right: 26%;
+}
+
+.close-stdnt:hover,
+.close-stdnt:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+  .testimonial {
+    width: 90%;
+  }
+
+  form small {
+    font-size: 0.6rem;
+  }
+
+  form p {
+    font-size: 0.8rem;
+    margin: 0px;
+    margin-top: -10px;
+  }
+
+  .close-stdnt {
+    font-size: 40px;
+    right: 8%;
+    top: 20%;
+  }
+
+  .testimonial h4 {
+    font-size: 1rem;
+  }
+
+  .testimonial small {
+    font-size: 0.8rem;
+  }
+
+  .testimonial p {
+    font-size: 0.8rem;
+  }
+
+  .testimonial-navigation {
+    margin-top: 10px;
+  }
+
+  #testimonials button {
+    padding: 10px 15px;
+  }
+
+  .feedback-div {
+    top: 0;
+    height: 100%;
+  }
+
+  .feedback-form {
+    width: 75%;
+  }
+
+  .feedback-form input {
+    width: 100%;
+  }
+}

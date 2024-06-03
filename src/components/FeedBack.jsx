@@ -59,7 +59,7 @@ export const FeedBack = () => {
           <div className="feedback-form">
             <span className="close" onClick={toggleForm}>&times;</span>
             <form onSubmit={handleSubmit}>
-                <h2>Feedback Form</h2>
+              <h2>Feedback Form</h2>
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="email" name="email" placeholder="Your Email" required />
               <textarea name="message" placeholder="Your Message" required></textarea>

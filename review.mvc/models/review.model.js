@@ -3,7 +3,6 @@ import{ Schema, model } from 'mongoose';
 const schema = new Schema({
     'studentName': {
         type: String,
-        required: true
     },
     'city': {
         type: String,

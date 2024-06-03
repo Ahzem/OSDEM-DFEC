@@ -259,6 +259,7 @@
 /*Media Queries*/
 @media (max-width: 768px) {
     #location {
+        cursor: pointer;
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 280px;

@@ -28,7 +28,7 @@ const Footer = () => {
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#contribute">Contribute Now</a></li>
                         <DownloadLink />
-                        <li><a href="https://web.facebook.com/minhath.nationalschool" target="_blank">Minhath National School</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
             </div>
