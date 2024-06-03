@@ -1,9 +1,9 @@
 import express from 'express';
 import { 
   ReviewCreate, 
-  ReviewDelete, 
+  // ReviewDelete, 
   ReviewIndex, 
-  ReviewUpdate 
+  // ReviewUpdate 
 } from '../controllers/reviews.controller.js';
 
 const router = express.Router();
@@ -15,10 +15,10 @@ router.post('/', ReviewCreate);
   // Read
   router.get('/', ReviewIndex);
   
-  // Update
-  router.put('/:id', ReviewUpdate);
+  // // Update
+  // router.put('/:id', ReviewUpdate);
 
-  // Delete
-  router.delete('/:id', ReviewDelete);
+  // // Delete
+  // router.delete('/:id', ReviewDelete);
 
   export default router;

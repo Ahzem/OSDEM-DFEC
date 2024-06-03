@@ -1,6 +1,6 @@
 import express from 'express';
-import reviewsRouter from './routes/reviews.route.js';
-import connectDB from './lib/db.js';
+import reviewsRouter from './review.mvc/routes/reviews.route.js';
+import connectDB from './review.mvc/lib/db.js';
 
 const app = express();
 const PORT = 3000;
