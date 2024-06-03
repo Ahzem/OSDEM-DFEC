@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import '../css/Testimonials.css';
 
 const Testimonials = () => {
   const [reviews, setReviews] = useState([]);
   const [message, setMessage] = useState('');
   const [showForm, setShowForm] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const fetchReviews = async () => {
@@ -22,6 +23,21 @@ const Testimonials = () => {
 
     fetchReviews();
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+    }, 15000);
+    return () => clearInterval(interval);
+  }, [reviews.length]);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length);
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -56,47 +72,58 @@ const Testimonials = () => {
     }
   };
 
+
   return (
-    <section id="testimonials" className="section" data-aos="fade-up">
+    <Fragment>
+    <section id="testimonials" className="section1" data-aos="fade-up">
       <h2 className="section-title">Student Reviews</h2>
       <div className="testimonials-container">
-        {reviews.slice(0, 3).map((review, index) => (
+        {reviews.slice(currentIndex, currentIndex + 3).map((review, index) => (
           <div key={index} className="testimonial">
-            <p>{review.review}</p>
             <h4>{review.studentName}</h4>
             <small>{review.city}, {review.stream} ({review.examYear})</small>
+            <p>{review.review}</p>
           </div>
         ))}
-        {reviews.length > 3 && (
-          <div className="testimonial-slider">
-            {reviews.slice(3).map((review, index) => (
-              <div key={index} className="testimonial">
-                <p>{review.review}</p>
-                <h4>{review.studentName}</h4>
-                <small>{review.city}, {review.stream} ({review.examYear})</small>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
-      <button className="feedback-new-btn" onClick={() => setShowForm(true)}>+ Add Review</button>
+      <div className="testimonial-navigation">
+        <button onClick={handlePrev}>Previous</button>
+        <button className="review-btn" onClick={() => setShowForm(true)}>+ Add Review</button>
+        <button onClick={handleNext}>Next</button>
+      </div>
+    </section>
       {showForm && (
-        <div className="feedback-new-div">
-          <div className="feedback-new-form">
+        <div className="feedback-div">
+          <div className="feedback-form">
             <span className="close" onClick={() => setShowForm(false)}>&times;</span>
             <form onSubmit={handleSubmit}>
+              <p className="note">Only students who have completed the A/L in our project can leave a review.</p>
               <input type="text" name="name" placeholder="Your Name" required />
-              <input type="text" name="city" placeholder="City" required />
-              <input type="text" name="stream" placeholder="Stream" required />
-              <input type="number" name="examYear" placeholder="Exam Year" required />
+              <input className="input-small" type="text" name="city" placeholder="City" required />
+              <input className="input-small" type="number" name="indexNo" placeholder="Index No" required />
+              {/* dropdown for select the stream 'Biological science' or 'Physical science' */}
+                <select name="stream" required>
+                    <option value="">Select Stream</option>
+                    <option value="Biological Science">Biological Science</option>
+                    <option value="Physical Science">Physical Science</option>
+                </select>
+                {/*select the exam sit year from 2020*/}
+                <select className="exam-year" required>
+                    <option value="">Select Exam Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2021">2022</option>
+                    <option value="2021">2023</option>
+                    <option value="2021">2024</option>
+                </select>
               <textarea name="review" placeholder="Your Review" required></textarea>
-              <button type="submit">Submit Feedback</button>
+              <button type="submit">Submit Review</button>
             </form>
             {message && <div className="alert">{message}</div>}
           </div>
         </div>
       )}
-    </section>
+    </Fragment>
   );
 };
 

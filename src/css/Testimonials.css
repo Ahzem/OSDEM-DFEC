@@ -1,122 +1,66 @@
-.section {
-    padding: 60px 20px;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
   .testimonials-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 10px;
   }
   
   .testimonial {
-    background: #fff;
+    background: #f9f9f938;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    box-sizing: border-box;
+    width: 280px;
   }
   
-  .testimonial p {
-    font-size: 1em;
-    margin-bottom: 10px;
+  .testimonial-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
   }
   
-  .testimonial h4 {
-    font-size: 1.2em;
-    margin: 0;
-  }
-  
-  .testimonial small {
-    display: block;
-    margin-top: 5px;
-    color: #555;
-  }
-  
-  .feedback-new-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #007BFF;
+  .testimonial-navigation button {
+    background: #007bff;
     color: white;
     border: none;
+    padding: 10px;
+    cursor: pointer;
     border-radius: 5px;
+  }
+  
+  .testimonial-navigation button:hover {
+    background: #0056b3;
+  }
+  
+  .btn {
+    text-align: center;
+  }
+  
+  #testimonials button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
   }
   
-  .feedback-new-btn:hover {
-    background-color: #0056b3;
+  #testimonials button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
   }
   
-  .feedback-new-div {
-    display: none;
+  .feedback-div {
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1009;
   }
-  
-  .feedback-new-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-  }
-  
-  .feedback-new-form .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .feedback-new-form input,
-  .feedback-new-form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .feedback-new-form button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .feedback-new-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .alert {
-    margin-top: 10px;
-    color: green;
-  }
-  
-  .testimonial-slider {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .testimonial-slider .testimonial {
-    width: 300px;
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-  }
-  

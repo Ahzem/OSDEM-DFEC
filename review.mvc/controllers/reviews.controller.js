@@ -16,6 +16,7 @@ export const ReviewCreate = async(req, res) => {
     const newReview = new Review({
         'studentName': req.body.studentName,
         'city': req.body.city,
+        'indexNo': req.body.indexNo,
         'stream': req.body.stream,
         'examYear': req.body.examYear,
         'review': req.body.review
