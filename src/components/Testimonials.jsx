@@ -61,7 +61,7 @@ const Testimonials = () => {
       });
 
       if (response.ok) {
-        setMessage('The message was sent successfully');
+        setMessage(`Dear ${event.target.name.value || 'Anonymous'}, thank you for your review!`);
         event.target.reset();
         setShowForm(false);
         const updatedReviews = await response.json();
@@ -118,7 +118,7 @@ const Testimonials = () => {
             <form onSubmit={handleSubmit}>
               <h2>Leave a Review</h2>
               <p>This form is for students who have studied in our project. Your reviews are the proof of our efforts and success.</p>
-              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="text" name="name" placeholder="Your Name" />
               <small>If you prefer to remain anonymous, you can leave this field blank.</small>
               <input className="input-small" type="text" name="city" placeholder="Hometown" required />
               <input className="input-small" type="number" name="indexNo" placeholder="A/L Index No" required />

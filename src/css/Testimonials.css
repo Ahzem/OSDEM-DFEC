@@ -113,6 +113,10 @@ form small {
 
 /*Media Queries*/
 @media screen and (max-width: 768px) {
+  #testimonials {
+    margin-bottom:50px;
+  }
+
   .testimonial {
     width: 90%;
   }
