@@ -74,12 +74,19 @@
       }
     
       .nav .menu-icon {
-        display: block;
         cursor: pointer;
         font-size: 30px;
         color: #ffffffbe;
-        left: 20px;
-        margin-left: 20px;
+        margin: 0 20px;
+
+      }
+
+      .menu-icon .menu-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 90px;
       }
     
       .nav.open .menu {
@@ -95,7 +102,6 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        margin-bottom: -10px;
       }
 
       .menu-icon .fa-bars {
@@ -106,8 +112,6 @@
       .menu-icon img {
         visibility: visible;
         height: 40px;
-        margin-left: 100px;
-        margin-top: 10px;
         opacity: 0.8;
       }
     }

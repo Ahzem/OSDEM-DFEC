@@ -7,9 +7,13 @@ export const NavBar = () => {
   return (
     <Fragment>
       <nav className='nav' data-aos="fade-down">
-        <div className="menu-icon" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faBars} className='fa-bars' />
-          <img src="https://i.imghippo.com/files/vGNyR1716860602.png" alt="logo" />
+        <div className="menu-icon">
+          <div className='menu-bar' onClick={toggleMenu}>
+            <FontAwesomeIcon icon={faBars} className='fa-bars' />
+          </div>
+          <div className='menu-img'>
+            <img src="https://i.imghippo.com/files/vGNyR1716860602.png" alt="logo" />
+          </div>
         </div>
           <div className="menu" >
             <a href="#about">about us</a>

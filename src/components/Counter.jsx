@@ -15,7 +15,7 @@ const Counter = ({ number, title }) => {
         if (currentCount >= number) {
           clearInterval(intervalId);
         }
-      }, 40);
+      }, 50);
       return () => clearInterval(intervalId); 
     };
 
@@ -33,7 +33,7 @@ const Counter = ({ number, title }) => {
 const App = () => {
   return (
     <div className="counter section1">
-      <Counter number={4} title="Future Engineers in training" />
+      <Counter number={4} title="Future Engineers & Doctors in training" />
       <Counter number={160} title="Students impacted by our project" />
       <Counter number={75} title="Current scholar students" />
       <Counter number={50} title="Talent available for universities" />
