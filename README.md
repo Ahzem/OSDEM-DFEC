@@ -42,7 +42,7 @@ npm install
 npm run dev
 ```
 
-The project will be available at `http://localhost:3000`.
+The project will be available at `http://localhost:{port-number}`.
 
 ## Usage
 
